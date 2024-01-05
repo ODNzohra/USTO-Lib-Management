@@ -88,7 +88,22 @@ function Send() {
         border: 2px solid;
         color: rgba(70, 45, 8, 0.463);
     }
-
+    button[type=button]{
+        color: #914d22;
+        width: 130px;
+        font-family: GenshinFont;
+        font-weight: bolder;
+        border: none;
+        border-radius: 50px;
+        margin: 10px; 
+        padding: 15px;
+        cursor: pointer;
+      }
+    
+      button[type=button]:hover {
+        background-color: #e6b52e;;
+        color: #ffffff;
+      }
   </style>
     <body>
         <fieldset>
@@ -111,6 +126,9 @@ function Send() {
                 </table>
             </center>
         </fieldset>
+        <br> <center>
+        <button type="button" onclick="history.go(-1)">Cancel</button>
+        </center><br>
     </body>`;
     document.write(formContent);
 }
