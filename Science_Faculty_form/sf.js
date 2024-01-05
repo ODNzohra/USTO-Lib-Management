@@ -137,11 +137,8 @@ function Send() {
     </body>`;
     document.write(formContent);
 }
-    
-    // Create a new HTML element and set its innerHTML
 
 function Clear() {
-    // Clear all input fields
     document.getElementById('fn').value = '';
     document.getElementById('sn').value = '';
     document.getElementById('pd').value = '';
