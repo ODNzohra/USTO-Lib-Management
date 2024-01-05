@@ -90,7 +90,22 @@ function Send() {
         border: 2px solid;
         color: rgba(14, 88, 101, 0.463);
     }
-
+    button[type=button]{
+        color: #914d22;
+        width: 130px;
+        font-family: GenshinFont;
+        font-weight: bolder;
+        border: none;
+        border-radius: 50px;
+        margin: 10px; 
+        padding: 15px;
+        cursor: pointer;
+      }
+    
+      button[type=button]:hover {
+        background-color: #3b969d;
+        color: #ffffff;
+      }
   </style>
     <body>
         <fieldset>
@@ -113,17 +128,14 @@ function Send() {
                 </table>
             </center>
         </fieldset>
-        <br>  
-          <button type="button" onclick="history.go(-1)">Cancel</button>
-          <br> 
+        <br> <center>
+        <button type="button" onclick="history.go(-1)">Cancel</button>
+        </center><br>
     </body>`;
     document.write(formContent);
 }
-    
-    // Create a new HTML element and set its innerHTML
 
 function Clear() {
-    // Clear all input fields
     document.getElementById('fn').value = '';
     document.getElementById('sn').value = '';
     document.getElementById('pd').value = '';
