@@ -1,0 +1,95 @@
+@font-face {
+    font-family: GenshinFont;
+    src: url('genshin.ttf');
+}
+
+body {
+    background-image: url('libraryblured.png');
+    background-size: cover;
+}
+
+fieldset {
+    background-color: #7fcc457c;
+    border: none;
+    border-radius: 30px;
+    border-width: 5px;
+    box-shadow: 2px 5px 10px;
+}
+
+.horizontal-line {
+    width: 100%;
+    border: 2px solid;
+    color: rgba(70, 45, 8, 0.463);
+}
+
+label {
+    font-weight: bolder;
+    font-family: GenshinFont;
+    font-size: 15px;
+    color: rgb(44, 26, 16);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select {
+    color: rgb(99, 72, 33);
+    background-color: rgb(235, 199, 140);
+    width: 160px;
+    font-family: GenshinFont;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+input::placeholder {
+    color: rgb(104, 79, 44);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+h1 {
+    font-family: GenshinFont;
+    font-weight: bolder;
+    font-size: 25px;
+    color: white;
+    text-shadow: 0 0 10px rgba(245, 217, 140);
+    padding-bottom: 5px;
+    cursor: default;
+}
+
+h2 {
+    font-family: GenshinFont;
+    color: rgb(235, 199, 140);
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: default;
+}
+
+button[type="submit"],
+button[type="reset"],
+button[type="button"] {
+    color: #916522;
+    width: 130px;
+    font-family: GenshinFont;
+    font-weight: bolder;
+    border: none;
+    border-radius: 50px;
+    margin: 10px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="reset"]:hover,
+button[type="button"]:hover {
+    background-color: #80cc45;
+    color: #ffffff;
+}

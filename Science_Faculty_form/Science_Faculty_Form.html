@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Science Faculty Form</title>
+  <link rel="icon" href="ustologo.png">
+  <script type="text/javascript" src="sf.js"></script>
+  <link rel="stylesheet" type="text/css" href="Science_Faculty_Form.css">
+</head>
+<body> 
+  <fieldset>
+    <center>
+      <h1>Order</h1>
+      <hr class="horizontal-line">
+      <h1> Science Faculty</h1> <br><br>
+
+      <label for="fn">First name: <input type="text" maxlength="70" placeholder="Your first name here" required="required" id="fn" /></label>
+      <label for="sn">Second Name: <input type="text" maxlength="70" placeholder="Your second name here" required="required" id="sn" /></label> <br> <br>
+      <label>Password: </label><input type="password" maxlength="70" placeholder="password" id="pd" />
+      <label>E-mail:</label><input type="email" placeholder="your email here" id="e@">
+
+      <hr class="horizontal-line">
+      <h2>What specialization would you like to order books for?</h2>
+      <label for="Bio"> Biology</label><input type="checkbox" id="Bio" />
+      <label for="Ali"> Alimentary </label><input type="checkbox" id="Ali" />
+      <label for="Biotech"> Biotechnology </label><input type="checkbox" id="Biotech" />
+
+      <hr class="horizontal-line">
+      <h2>For which level?</h2>
+      <label> Bachelor's Degree </label><input type="radio" name="niv" id="B" />    <br> <br>
+      <label> Master's Degree </label><input type="radio" name="niv" id="M"/><br> <br>
+      <label> Other </label><input type="radio" name="niv" id="O"/>
+
+      <hr class="horizontal-line">
+      <h2>For which option?</h2>
+      <form name="form5">
+        <select name="list">
+          <option value="1" id="ZO"> Zoology</option>
+          <option value="2" id="GE"> Genetics</option>
+          <option value="3" id="BP"> Biophysics</option>
+          <option value="4" id="BC"> Biochemistry</option>
+          <option value="5" id="MC"> Microbiology</option>
+          <option value="6" id="TX"> Toxicology</option>
+          <option value="7" id="BT"> Botanical</option>
+        </select>
+      </form> <br>
+
+      <hr class="horizontal-line">
+      <h2>Information about the Book:</h2> 
+      <label for="bt">Book Title:<input type="text" maxlength="70" placeholder="enter the book title..." required="required" id="bt" /></label>
+      <label for="au">Author: <input type="text" maxlength="70" placeholder="enter Author's name..." required="required" id="au" /></label> 
+      <label for="bhn">Publishing House :  <input type="text" maxlength="70" placeholder="enter Publishing House name..." required="required" id="bhn" /></label><br>
+      <label for="yop">Year Of Publication: <input type="text" maxlength="70" placeholder="enter the year of publication..." required="required" id="yop" /></label>
+      <label for="bd">Borrowing Date: <input type="date" maxlength="70" placeholder="dd/mm/yyyy" id="bd" /></label>
+      <label for="rd">Return Date: <input type="date" maxlength="70" placeholder="dd/mm/yyyy" id="rd" /></label>
+
+    </center>
+  </fieldset>
+  <br>  
+  <center>
+    <button type="submit" onclick="Send()">Send</button>
+    <button type="reset" onclick="Clear()">Clear</button>
+    <button type="button" onclick="history.go(-1)">Cancel</button>
+    <br> 
+  </center>
+</body>
+</html>

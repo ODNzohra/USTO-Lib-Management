@@ -1,0 +1,146 @@
+@font-face {
+    font-family: GenshinFont;
+    src: url(genshin.ttf);
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: GenshinFont;
+  }
+  .faculty {
+    padding: 10px;
+    cursor: pointer;
+  }
+  .faculty#ef.selectedFaculty {
+    border: 5px solid rgb(127, 127, 127);
+    background-color: #3b969d;
+    color: #ffffff;
+  }
+  .faculty#sf.selectedFaculty {
+    border: 5px solid rgb(127, 127, 127);
+    background-color: #80cc45;
+    color: #ffffff;
+  }
+  .faculty#af.selectedFaculty {
+    border: 5px solid rgb(127, 127, 127);
+    background-color: #FFA500;
+    color: #ffffff;
+  }
+  #introSection {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('libraryblured.png');
+    background-size: cover;
+  }
+
+  #introText {
+    font-family: GenshinFont;
+    font-size: 50px;
+    color: white;
+    text-shadow: 0 0 10px rgba(245, 217, 140);
+    border-spacing: 50px;
+  }
+  h1 {
+    font-family: GenshinFont;
+    font-size: 35px;
+    color: rgb(128, 62, 27);
+    text-shadow: 0 5px rgb(192, 158, 100);
+  }
+  h2 {
+    font-family: GenshinFont;
+    font-size: 25px;
+  }
+
+  p {
+    font-family: GenshinFont;
+    font-size: 15px;
+    color: #aba493;
+  }
+  #ustoIcon1,
+  #ustoIcon2 {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px; 
+  }
+  #librarySection {
+    background-color: rgb(241, 220, 162);
+    padding: 50px;
+}
+
+
+  /*****Engineering Faculty****/
+  .Engineering_Faculty {
+    color: #3b969d;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 50px;
+    border-width: 10px;
+    cursor: pointer;
+  }
+  .Engineering_Faculty:hover {
+    background-color: #3b969d;
+    color: #ffffff;
+  }
+  .Engineering_Faculty:hover p {
+    color: #ffffff;
+  }
+  /****Science_Faculty****/
+  .Science_Faculty {
+    color: #80cc45;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 50px;
+    border-width: 10px;
+    cursor: pointer;
+  }
+
+  .Science_Faculty:hover {
+    background-color: #80cc45;
+    color: #ffffff;
+  }
+  .Science_Faculty:hover p {
+    color: #ffffff;
+  }
+
+  /*****Architecture_Faculty****/
+  .Architecture_Faculty {
+    color: #e6b52e;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 50px;
+    border-width: 10px;
+    cursor: pointer;
+  }
+  .Architecture_Faculty:hover {
+    background-color: #e6b52e;
+    color: #ffffff;
+  }
+  .Architecture_Faculty:hover p {
+    color: #ffffff;
+  }
+  /*********************************/
+  button[type=submit],
+  button[type=reset] {
+    color: #914d22;
+    width: 130px;
+    font-family: GenshinFont;
+    font-weight: bolder;
+    border: none;
+    border-radius: 50px;
+    margin: 10px; /* Adjust margin to create space between buttons */
+    padding: 15px;
+    cursor: pointer;
+  }
+
+  button[type=submit]:hover,
+  button[type=reset]:hover {
+    background-color: #3b969d;
+    color: #ffffff;
+  }

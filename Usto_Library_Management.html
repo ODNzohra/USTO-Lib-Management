@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USTO Library Management</title>
+  <link rel="icon" href="ustologo.png">
+  <link rel="stylesheet" type="text/css" href="Usto_Library_Management.css">
+  <script>
+    function selectFaculty(selectedFac) {
+      var faculties = document.querySelectorAll('.faculty');
+      faculties.forEach(faculty => faculty.classList.remove('selectedFaculty'));
+      var selectedFaculty = document.getElementById(selectedFac);
+      if (selectedFaculty) selectedFaculty.classList.add('selectedFaculty');
+    }
+    
+    function borrow() {
+      var selectedFac = document.querySelector('.selectedFaculty');
+      if (selectedFac) {
+        switch (selectedFac.id) {
+          case 'ef':
+            window.location.href = 'Engineering_Faculty_Form/Engineering_Faculty_Form.html';
+            break;
+          case 'sf':
+            window.location.href = 'Science_Faculty_Form/Science_Faculty_Form.html';
+            break;
+          case 'af':
+            window.location.href = 'Architecture_Faculty_Form/Architecture_Faculty_Form.html';
+            break;
+          default:
+            console.error('Invalid faculty selection');
+        }
+      } else {
+        console.error('No faculty selected');
+      }
+    }
+  </script>
+</head>
+<body>
+  <section id="introSection">
+    <table id="introText">
+      <tr>
+        <td>
+          <img id="ustoIcon1" src="ustologo.png" alt="Usto Icon">
+        </td>
+        <td>
+            <span> USTO Library Management</span>
+             </div>
+           </body>
+        </td>
+        <td>
+          <img id="ustoIcon2" src="ustologo.png" alt="Usto Icon">
+        </td>
+      </tr>
+    </table>
+    
+  </section>
+  
+  <section id="librarySection">
+    <div style="text-align: center;">
+      <h1>Libraries By Faculty</h1><br>
+      <div class="Engineering_Faculty faculty" id="ef" onclick="selectFaculty('ef')"> 
+        <h2>Electrical Engineering Faculty</h2>
+        <p>Access the form of Electrical Engineering Faculty.</p>
+      </div>
+
+      <div class="Science_Faculty faculty" id="sf" onclick="selectFaculty('sf')">
+        <h2>Science Faculty</h2>
+         <p>Access the form of Science Faculty.</p>
+      </div>
+
+      <div class="Architecture_Faculty faculty" id="af" onclick="selectFaculty('af')">
+        <h2>Architecture Faculty</h2>
+        <p>Access the form of Architecture Faculty.</p>
+      </div>
+
+      <br>
+      <button type="submit" onclick="borrow()">Borrow</button>
+      <button type="reset" onclick="selectFaculty('')">Cancel</button>
+    </div>
+  </section>
+</body>
+</html>
